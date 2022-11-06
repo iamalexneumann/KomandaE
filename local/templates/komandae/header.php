@@ -9,6 +9,8 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
  * @var COption $siteparam_scripts_head
  * @var COption $siteparam_scripts_body_before
  * @var COption $siteparam_main_logo
+ * @var COption $siteparam_logo_name
+ * @var COption $siteparam_logo_description
  * @var COption $siteparam_main_phone
  * @var COption $siteparam_main_phone_tel
  */
@@ -49,19 +51,25 @@ Loc::loadLanguageFile(__FILE__);
     <?= $siteparam_scripts_body_before; ?>
     <?php $APPLICATION->ShowPanel(); ?>
     <header class="main-header">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand"
-                   title="<?= htmlspecialchars($arSite['SITE_NAME']); ?>"
+                <a class="logo"
+                   title="<?= htmlspecialchars($siteparam_logo_name); ?>"
                     <?php if ($CurDir !== '/'): ?> href="/"<?php endif; ?>>
-                    <img src="<?= $siteparam_main_logo; ?>" width="75" height="75" alt="<?= htmlspecialchars($arSite['SITE_NAME']); ?>">
+                    <img src="<?= $siteparam_main_logo; ?>" class="logo__img" width="75" height="75" alt="<?= htmlspecialchars($siteparam_logo_name); ?>">
+                    <span class="logo__wrapper">
+                        <?php if ($siteparam_logo_description): ?>
+                        <span class="logo__description"><?= $siteparam_logo_description; ?></span>
+                        <?php endif; ?>
+                        <span class="logo__name"><?= $siteparam_logo_name; ?></span>
+                    </span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false"
                         data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-label="<?= Loc::getMessage('HEADER_NAVBAR_ARIA_LABEL'); ?>">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainNavbar">
-                    <div class="ms-auto me-auto">
+                    <div class="ms-auto">
                         <?php
                         $APPLICATION->IncludeComponent(
                             "bitrix:menu",
@@ -85,16 +93,14 @@ Loc::loadLanguageFile(__FILE__);
                             false
                         ); ?>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <a href="tel:<?= $siteparam_main_phone_tel; ?>" title="<?= Loc::getMessage('HEADER_MAIN_PHONE_TITLE'); ?>"><?= $siteparam_main_phone; ?></a>
-                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-area">
         <div class="container">
-            <header>
+            <header class="page-header">
+                <h1 class="page-header__title"><?php $APPLICATION->ShowTitle(false); ?></h1>
                 <?php
                 $APPLICATION->IncludeComponent(
                     "bitrix:breadcrumb",
@@ -106,6 +112,4 @@ Loc::loadLanguageFile(__FILE__);
                     ),
                     false
                 ); ?>
-                <h1><?php $APPLICATION->ShowTitle(false); ?></h1>
-                <?php $APPLICATION->ShowViewContent('MAIN_SUBTITLE'); ?>
             </header>
