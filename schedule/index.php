@@ -1,11 +1,10 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Расписание");
-?><iframe id="f781527"
-        src="https://infokomandaeru.impulsecrm.ru/widget/1"
-        style="width:100%; min-height:400px; border:0; transform:translateZ(0)"
-        scrolling="no">
-</iframe>
+?>
+<iframe id="f781527"
+    src="https://infokomandaeru.impulsecrm.ru/widget/1"
+    style="width:100%; min-height:400px; border:0; transform:translateZ(0)"></iframe>
 <script>
   const f781527 = document.getElementById("f781527");
   const iws1PostScroll = function(e) {
@@ -35,4 +34,5 @@ $APPLICATION->SetTitle("Расписание");
     }
   });
   window.addEventListener("scroll", iws1PostScroll);
-</script><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+</script>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

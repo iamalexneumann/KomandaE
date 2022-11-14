@@ -1,0 +1,22 @@
+.footer-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__item {
+    margin-bottom: 5px;
+  }
+
+  &__link {
+    color: var(--white-color);
+    font-weight: 400;
+
+    &:hover, &_active {
+      color: #CDD4FB;
+    }
+
+    &_active {
+      //font-weight: 500;
+    }
+  }
+}

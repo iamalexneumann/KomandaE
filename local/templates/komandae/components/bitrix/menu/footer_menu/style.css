@@ -1,0 +1,13 @@
+.footer-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .footer-menu__item {
+    margin-bottom: 5px; }
+  .footer-menu__link {
+    color: var(--white-color);
+    font-weight: 400; }
+    .footer-menu__link:hover, .footer-menu__link_active {
+      color: #CDD4FB; }
+
+/*# sourceMappingURL=style.css.map */
