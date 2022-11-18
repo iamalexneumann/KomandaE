@@ -2,6 +2,8 @@
 $MESS['BTN_CLOSE_LABEL'] = 'Закрыть';
 $MESS['CALLBACK_MODAL_TITLE'] = 'Заказать обратный звонок';
 
+$MESS['FOOTER_MAIN_NAVIGATION_TITLE'] = 'Меню';
+$MESS['FOOTER_SERVICES_NAVIGATION_TITLE'] = 'Виды спорта';
 $MESS['FOOTER_MAIN_PHONE_TITLE'] = 'Позвонить';
 $MESS['FOOTER_CALLBACK_BTN_TEXT'] = 'Заказать звонок';
 $MESS['FOOTER_CALLBACK_BTN_DATA_SOURCE'] = 'Кнопка в подвале сайта';

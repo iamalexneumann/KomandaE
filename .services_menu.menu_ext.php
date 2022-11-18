@@ -21,7 +21,7 @@ if (CModule::IncludeModule("iblock")) {
     foreach ($elements as $element) {
         $aMenuLinksExt[] = [
             $element["NAME"],
-            "/nashi-zaly/" . $element["CODE"] . "/",
+            "/services/" . $element["CODE"] . "/",
             [],
             [],
             ""

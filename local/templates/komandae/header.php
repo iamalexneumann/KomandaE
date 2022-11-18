@@ -53,15 +53,15 @@ Loc::loadLanguageFile(__FILE__);
     <header class="main-header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="logo"
+                <a class="logo logo_header"
                    title="<?= htmlspecialchars($siteparam_logo_name); ?>"
                     <?php if ($CurDir !== '/'): ?> href="/"<?php endif; ?>>
                     <img src="<?= $siteparam_main_logo; ?>" class="logo__img" width="75" height="75" alt="<?= htmlspecialchars($siteparam_logo_name); ?>">
                     <span class="logo__wrapper">
+                        <span class="logo__name"><?= htmlspecialchars($siteparam_logo_name); ?></span>
                         <?php if ($siteparam_logo_description): ?>
-                        <span class="logo__description"><?= $siteparam_logo_description; ?></span>
+                        <span class="logo__description"><?= htmlspecialchars($siteparam_logo_description); ?></span>
                         <?php endif; ?>
-                        <span class="logo__name"><?= $siteparam_logo_name; ?></span>
                     </span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false"

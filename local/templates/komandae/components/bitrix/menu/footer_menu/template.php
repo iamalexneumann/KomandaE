@@ -18,9 +18,10 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
  * @var array $templateData
  * @var CBitrixComponent $component
  */
+$param_footer_menu_class = $arParams['FOOTER_MENU_CLASS'] ?? '';
 ?>
 <?php if (!empty($arResult)): ?>
-<ul class="footer-menu">
+<ul class="footer-menu<?php if ($param_footer_menu_class) echo ' footer-menu_' . $param_footer_menu_class; ?>">
 <?php
 $previousLevel = 0;
 

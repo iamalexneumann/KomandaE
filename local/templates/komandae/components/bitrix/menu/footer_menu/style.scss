@@ -3,20 +3,34 @@
   margin: 0;
   list-style: none;
 
+  &_columns-two {
+    columns: 2;
+    margin-top: -10px;
+
+    @media (max-width: 575.98px) {
+      columns: 1;
+    }
+  }
+
   &__item {
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   &__link {
     color: var(--white-color);
     font-weight: 400;
 
-    &:hover, &_active {
-      color: #CDD4FB;
+    &:hover {
+      color: var(--lightest-blue-color);
     }
 
     &_active {
-      //font-weight: 500;
+      font-weight: 500;
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: var(--font-size-small);
     }
   }
 }
