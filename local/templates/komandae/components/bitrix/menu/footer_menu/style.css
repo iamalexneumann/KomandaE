@@ -13,7 +13,8 @@
     margin-bottom: 10px; }
   .footer-menu__link {
     color: var(--white-color);
-    font-weight: 400; }
+    font-weight: 400;
+    opacity: 0.85; }
     .footer-menu__link:hover {
       color: var(--lightest-blue-color); }
     .footer-menu__link_active {

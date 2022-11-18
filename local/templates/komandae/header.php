@@ -66,7 +66,8 @@ Loc::loadLanguageFile(__FILE__);
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false"
                         data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-label="<?= Loc::getMessage('HEADER_NAVBAR_ARIA_LABEL'); ?>">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler__text"><?= Loc::getMessage('HEADER_NAVBAR_TOGGLER_TEXT'); ?></span>
+                    <span class="navbar-toggler__icon"><i class="fa-solid fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <div class="ms-auto">
