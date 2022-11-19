@@ -1,3 +1,19 @@
-
+.main-pagination.pagination {
+  --bs-pagination-padding-x: 20px;
+  --bs-pagination-padding-y: 12px;
+  --bs-pagination-color: var(--primary-color);
+  --bs-pagination-bg: var(--white-color);
+  --bs-pagination-border-color: transparent;
+  --bs-pagination-border-radius: 0;
+  --bs-pagination-hover-color: var(--white-color);
+  --bs-pagination-hover-bg: var(--primary-color);
+  --bs-pagination-hover-border-color: transparent;
+  --bs-pagination-focus-color: var(--primary-color);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+  --bs-pagination-active-color: var(--white-color);
+  --bs-pagination-active-bg: var(--primary-color);
+  --bs-pagination-active-border-color: transparent;
+  --bs-pagination-disabled-border-color: transparent;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

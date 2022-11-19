@@ -141,3 +141,20 @@ function is_empty_iblock (array $filter):array
     }
     return $elements;
 }
+
+/**
+ * Функция возвращает количество лет с правильным окочанием
+ * @param int $num_years Количество лет
+ * @param string $one Склонение "год"
+ * @param string $four Склонение "года"
+ * @param string $five Склонение "лет"
+ * @return string Выходная строга в формате "5 лет"
+ */
+function get_experience (int $num_years, string $one, string $four, string $five):string
+{
+    if (!$num_years) {
+        return '';
+    }
+    $num_yearsDeclension = new Declension($one, $four, $five);
+    return $num_years . ' ' . $num_yearsDeclension->get($num_years);
+}

@@ -1,0 +1,107 @@
+.coaches-list__item {
+  margin-bottom: 100px; }
+  @media (max-width: 991.98px) {
+    .coaches-list__item {
+      margin-bottom: 50px; } }
+
+.coach-item {
+  display: flex;
+  align-items: flex-start; }
+  .coach-item__img-link {
+    position: relative;
+    flex-shrink: 0;
+    width: 500px; }
+    .coach-item__img-link::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: -37.5px;
+      width: 75px;
+      height: 80px;
+      background: #FFFFFF url(../../../../img/shape.svg) 0 0 no-repeat;
+      z-index: -1; }
+    .coach-item__img-link::after {
+      content: "";
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      bottom: -50px;
+      right: -50px;
+      background: var(--secondary-color);
+      z-index: -1; }
+      @media (max-width: 767.98px) {
+        .coach-item__img-link::after {
+          bottom: -30px;
+          right: -30px; } }
+    @media (max-width: 1199.98px) {
+      .coach-item__img-link {
+        width: 400px; } }
+    @media (max-width: 767.98px) {
+      .coach-item__img-link {
+        width: calc(100% - 20px); } }
+  .coach-item__img {
+    width: 100%; }
+  .coach-item__wrapper {
+    flex-grow: 1;
+    padding-top: 50px;
+    padding-left: 100px; }
+    @media (max-width: 991.98px) {
+      .coach-item__wrapper {
+        padding-top: 100px;
+        padding-left: 0; } }
+    @media (max-width: 767.98px) {
+      .coach-item__wrapper {
+        padding-top: 70px; } }
+  .coach-item__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin: 0 0 15px 0; }
+    @media (max-width: 767.98px) {
+      .coach-item__title {
+        font-size: 2rem; } }
+  .coach-item__experience {
+    color: var(--text-muted);
+    font-size: var(--font-size-small);
+    margin-bottom: 20px; }
+  .coach-item__services-list {
+    margin-bottom: 20px; }
+  .coach-item__services-link {
+    text-transform: lowercase;
+    border-bottom: 1px solid var(--primary-color); }
+    .coach-item__services-link:hover {
+      border-bottom: transparent; }
+  .coach-item__achievements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .coach-item__achievements li {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 15px; }
+    .coach-item__achievements li:last-of-type {
+      margin-bottom: 0; }
+    @media (max-width: 767.98px) {
+      .coach-item__achievements li {
+        font-size: 1.125rem; } }
+  .coach-item__achievements li::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f559";
+    color: var(--primary-color);
+    margin-right: 15px; }
+    @media (max-width: 767.98px) {
+      .coach-item__achievements li::before {
+        margin-right: 10px; } }
+  .coach-item__detail-text {
+    margin-top: 50px; }
+    @media (max-width: 767.98px) {
+      .coach-item__detail-text {
+        margin-top: 30px; } }
+  @media (max-width: 991.98px) {
+    .coach-item {
+      flex-direction: column; } }
+
+/*# sourceMappingURL=style.css.map */

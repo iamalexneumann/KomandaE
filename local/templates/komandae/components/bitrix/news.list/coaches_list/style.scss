@@ -1,0 +1,153 @@
+.coaches-list {
+  &__item {
+    margin-bottom: 100px;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.coach-item {
+  display: flex;
+  align-items: flex-start;
+
+  &__img-link {
+    position: relative;
+    flex-shrink: 0;
+    width: 500px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: -37.5px;
+      width: 75px;
+      height: 80px;
+      background: #FFFFFF url(../../../../img/shape.svg) 0 0 no-repeat;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      bottom: -50px;
+      right: -50px;
+      background: var(--secondary-color);
+      z-index: -1;
+
+      @media (max-width: 767.98px) {
+        bottom: -30px;
+        right: -30px;
+      }
+    }
+
+    @media (max-width: 1199.98px) {
+      width: 400px;
+    }
+
+    @media (max-width: 767.98px) {
+      width: calc(100% - 20px);
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__wrapper {
+    flex-grow: 1;
+    padding-top: 50px;
+    padding-left: 100px;
+
+    @media (max-width: 991.98px) {
+      padding-top: 100px;
+      padding-left: 0;
+    }
+
+    @media (max-width: 767.98px) {
+      padding-top: 70px;
+    }
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin: 0 0 15px 0;
+
+    @media (max-width: 767.98px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__experience {
+    color: var(--text-muted);
+    font-size: var(--font-size-small);
+    margin-bottom: 20px;
+  }
+
+  &__services-list {
+    margin-bottom: 20px;
+  }
+
+  &__services-link {
+    text-transform: lowercase;
+    border-bottom: 1px solid var(--primary-color);
+
+    &:hover {
+      border-bottom: transparent;
+    }
+  }
+
+  &__achievements {
+
+    & ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    & li {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 767.98px) {
+        font-size: 1.125rem;
+      }
+    }
+
+    & li::before {
+      display: inline-block;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font: var(--fa-font-solid);
+      content: "\f559";
+      color: var(--primary-color);
+      margin-right: 15px;
+
+      @media (max-width: 767.98px) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__detail-text {
+    margin-top: 50px;
+
+    @media (max-width: 767.98px) {
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+  }
+}

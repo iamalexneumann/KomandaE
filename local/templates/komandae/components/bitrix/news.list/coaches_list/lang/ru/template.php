@@ -1,0 +1,7 @@
+<?php
+$MESS['CT_BNL_ELEMENT_DELETE_CONFIRM'] = 'Будет удалена вся информация, связанная с этой записью. Продолжить?';
+$MESS['COACHES_LIST_EXPERIENCE_TITLE'] = 'Тренерский стаж';
+$MESS['COACHES_LIST_SERVICES_TITLE'] = 'Вид спорта';
+$MESS['COACHES_LIST_EXPERIENCE_DECLENSION_ONE'] = 'год';
+$MESS['COACHES_LIST_EXPERIENCE_DECLENSION_FOUR'] = 'года';
+$MESS['COACHES_LIST_EXPERIENCE_DECLENSION_FIVE'] = 'лет';

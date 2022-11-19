@@ -29,7 +29,7 @@ if (!$arResult['NavShowAlways']) {
     }
 }
 ?>
-<ul class="pagination" aria-label="<?= Loc::getMessage('MAIN_PAGINATION_ARIA_LABEL'); ?>">
+<ul class="main-pagination pagination" aria-label="<?= Loc::getMessage('MAIN_PAGINATION_ARIA_LABEL'); ?>">
     <?php
     $strNavQueryString = ($arResult['NavQueryString'] !== '' ? $arResult['NavQueryString'] . '&amp;' : '');
     $strNavQueryStringFull = ($arResult['NavQueryString'] !== '' ? '?' . $arResult['NavQueryString'] : '');
