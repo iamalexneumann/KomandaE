@@ -13,7 +13,6 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
  * @var COption $siteparam_main_phone_tel
  * @var COption $siteparam_email
  * @var COption $siteparam_address
- * @var COption $siteparam_schedule
  * @var COption $siteparam_whatsapp_number
  * @var COption $siteparam_whatsapp_number_tel
  * @var COption $siteparam_whatsapp_message
@@ -55,12 +54,6 @@ use Bitrix\Main\Localization\Loc;
                                     <i class="footer-contacts__icon fa-regular fa-envelope"></i>
                                     <a href="mailto:<?= $siteparam_email; ?>"><?= $siteparam_email; ?></a>
                                 </div>
-                                <?php if ($siteparam_schedule): ?>
-                                <div class="footer-contacts__item footer-contacts__item_schedule">
-                                    <i class="footer-contacts__icon fa-regular fa-clock"></i>
-                                    <?= $siteparam_schedule; ?>
-                                </div>
-                                <?php endif; ?>
                                 <button type="button"
                                         class="btn btn-warning footer-contacts__callback-btn"
                                         data-bs-toggle="modal"
