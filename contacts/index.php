@@ -1,7 +1,6 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Контакты");
-use Bitrix\Main\Localization\Loc;
 ?>
 <div class="page-contacts">
     <div class="row page-contacts__row">
@@ -37,16 +36,16 @@ use Bitrix\Main\Localization\Loc;
             </div>
             <?php endif; ?>
             <a class="page-contacts__phone-link" href="tel:<?= $siteparam_main_phone_tel; ?>"
-               title="<?= Loc::getMessage('PAGE_CONTACTS_MAIN_PHONE_TITLE'); ?>"><?= $siteparam_main_phone; ?></a>
+               title="Позвонить"><?= $siteparam_main_phone; ?></a>
             <div class="page-contacts__item page-contacts__item_email">
                 <i class="page-contacts__icon fa-regular fa-envelope"></i>
-                <a href="mailto:<?= $siteparam_email; ?>"><?= $siteparam_email; ?></a>
+                <a href="mailto:<?= $siteparam_email; ?>" title="Написать E-mail"><?= $siteparam_email; ?></a>
             </div>
             <button type="button"
                     class="btn btn-warning page-contacts__callback-btn"
                     data-bs-toggle="modal"
                     data-bs-target="#callbackModal"
-                    data-bs-source="<?= Loc::getMessage('PAGE_CONTACTS_CALLBACK_BTN_DATA_SOURCE') ?>">Заказать звонок</button>
+                    data-bs-source="Кнопка на странице Контакты">Заказать звонок</button>
             <?php if ($siteparam_whatsapp_number || $siteparam_telegram_link): ?>
             <ul class="messengers page-contacts__messengers">
                 <?php if ($siteparam_whatsapp_number): ?>
@@ -54,7 +53,7 @@ use Bitrix\Main\Localization\Loc;
                     <a href="https://wa.me/<?php echo $siteparam_whatsapp_number_tel; echo $siteparam_whatsapp_message ?: '' ?>"
                        class="messengers__link"
                        target="_blank"
-                       title="<?= Loc::getMessage('PAGE_CONTACTS_MESSENGERS_WHATSAPP_TITLE') ?>"><i class="messengers__icon fa-brands fa-whatsapp"></i></a>
+                       title="Написать в WhatsApp"><i class="messengers__icon fa-brands fa-whatsapp"></i></a>
                 </li>
                 <?php endif; ?>
                 <?php if ($siteparam_telegram_link): ?>
@@ -62,7 +61,7 @@ use Bitrix\Main\Localization\Loc;
                     <a href="<?= $siteparam_telegram_link; ?>"
                        class="messengers__link"
                        target="_blank"
-                       title="<?= Loc::getMessage('PAGE_CONTACTS_MESSENGERS_TELEGRAM_TITLE') ?>"><i class="messengers__icon fa-brands fa-telegram"></i></a>
+                       title="Написать в Telegram"><i class="messengers__icon fa-brands fa-telegram"></i></a>
                 </li>
                 <?php endif; ?>
             </ul>

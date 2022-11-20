@@ -104,6 +104,32 @@ h5,
   --bs-btn-disabled-bg: #ffc107;
   --bs-btn-disabled-border-color: #ffc107; }
 
+.table {
+  margin-bottom: 50px;
+  color: var(--dark-color);
+  font-size: 1.125rem; }
+  .table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: var(--gray-color);
+    color: var(--dark-color); }
+  @media (max-width: 767.98px) {
+    .table {
+      font-size: 1rem; } }
+  .table th {
+    font-weight: 600; }
+  .table caption {
+    caption-side: top;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+    color: var(--dark-color);
+    padding: 0; }
+  .table > :not(caption) > * > * {
+    padding: 20px 30px;
+    border: none; }
+    @media (max-width: 767.98px) {
+      .table > :not(caption) > * > * {
+        padding: 10px 15px; } }
+
 .page-header {
   margin-bottom: 75px; }
   .page-header__title {
@@ -435,5 +461,11 @@ h5,
   font-weight: 600; }
   .page-contacts__item_email a:hover {
     color: var(--primary-color); }
+
+.page-price td {
+  width: 300px; }
+  @media (max-width: 767.68px) {
+    .page-price td {
+      width: auto; } }
 
 /*# sourceMappingURL=template_styles.css.map */
