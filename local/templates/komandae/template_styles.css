@@ -25,14 +25,6 @@ body {
   color: var(--white-color);
   background: var(--primary-color); }
 
-.blur-up {
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-  transition: var(--transition); }
-  .blur-up.lazyloaded {
-    -webkit-filter: blur(0);
-    filter: blur(0); }
-
 img {
   max-width: 100%;
   height: auto; }
