@@ -662,11 +662,18 @@ h5,
 
 .page-price {
 
+  & tr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   & td {
     width: 300px;
 
     @media (max-width: 767.68px) {
       width: auto;
+      padding-top: 0;
     }
   }
 }

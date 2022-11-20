@@ -462,10 +462,15 @@ h5,
   .page-contacts__item_email a:hover {
     color: var(--primary-color); }
 
+.page-price tr {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
 .page-price td {
   width: 300px; }
   @media (max-width: 767.68px) {
     .page-price td {
-      width: auto; } }
+      width: auto;
+      padding-top: 0; } }
 
 /*# sourceMappingURL=template_styles.css.map */

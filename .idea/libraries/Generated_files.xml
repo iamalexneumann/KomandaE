@@ -15,9 +15,11 @@
         <item url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.detail/.default/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.list/.default/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.list/coaches_list/script.min.js" />
-        <item url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.list/coaches_list/script.min.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.list/services_list/script.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.list/services_list/script.min.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news/.default_simple/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news/.default_very_simple/script.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news/services/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/komandae/main.min.js" />
       </sourceFilesUrls>
     </properties>
@@ -35,9 +37,11 @@
       <root url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.detail/.default/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.list/.default/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.list/coaches_list/script.min.js" />
-      <root url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.list/coaches_list/script.min.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.list/services_list/script.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news.list/services_list/script.min.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news/.default_simple/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news/.default_very_simple/script.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/komandae/components/bitrix/news/services/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/komandae/main.min.js" />
     </CLASSES>
     <JAVADOC />
