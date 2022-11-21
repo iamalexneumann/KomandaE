@@ -19,8 +19,8 @@ $APPLICATION->SetTitle("Контакты");
                     }, {
                         iconLayout: 'default#image',
                         iconImageHref: '<?= SITE_TEMPLATE_PATH; ?>/img/pin.png',
-                        iconImageSize: [72, 96],
-                        iconImageOffset: [-36, -96],
+                        iconImageSize: [72, 75],
+                        iconImageOffset: [-36, -75],
                     });
 
                     mainMap.geoObjects.add(mainPlacemark);
