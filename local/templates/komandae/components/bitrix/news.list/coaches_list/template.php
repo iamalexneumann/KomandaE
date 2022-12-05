@@ -85,19 +85,17 @@ $param_small_card_tag_title = $arParams['SMALL_CARD_TAG_TITLE'] ?? '2';
             <?php if ($arItem['DISPLAY_PROPERTIES']['ATT_DETAIL_TEXT']['~VALUE']): ?>
             <div class="coach-item__detail-text">
                 <?php
-                if ($arItem['DISPLAY_PROPERTIES']['ATT_DETAIL_TEXT']['~VALUE']) {
-                    $APPLICATION->IncludeComponent(
-                        "sprint.editor:blocks",
-                        ".default",
-                        Array(
-                            "JSON" => $arItem['DISPLAY_PROPERTIES']['ATT_DETAIL_TEXT']['~VALUE'],
-                        ),
-                        $component,
-                        Array(
-                            "HIDE_ICONS" => "Y"
-                        )
-                    );
-                } ?>
+                $APPLICATION->IncludeComponent(
+                    "sprint.editor:blocks",
+                    ".default",
+                    Array(
+                        "JSON" => $arItem['DISPLAY_PROPERTIES']['ATT_DETAIL_TEXT']['~VALUE'],
+                    ),
+                    $component,
+                    Array(
+                        "HIDE_ICONS" => "Y"
+                    )
+                ); ?>
             </div>
             <?php endif; ?>
         </div>

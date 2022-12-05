@@ -42,7 +42,7 @@ $APPLICATION->IncludeComponent(
         "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
         "LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
         "LIST_FIELD_CODE" => array("", ""),
-        "LIST_PROPERTY_CODE" => array("", ""),
+        "LIST_PROPERTY_CODE" => array("ATT_PREVIEW_TEXT", ""),
         "MESSAGE_404" => "",
         "META_DESCRIPTION" => "-",
         "META_KEYWORDS" => "-",

@@ -35,9 +35,36 @@ $param_small_card_tag_title = $arParams['SMALL_CARD_TAG_TITLE'] ?? '2';
         );
     ?>
     <article class="services-list__item services-item" id="<?= $this->GetEditAreaId($arItem['ID']) ;?>">
-        <h<?=$param_small_card_tag_title; ?>>
-            <a href="<?= $arItem['DETAIL_PAGE_URL']; ?>"><?= $arItem['NAME']; ?></a>
-        </h<?=$param_small_card_tag_title; ?>>
+        <a href="<?= $arItem['DETAIL_PAGE_URL']; ?>" class="services-item__img-link">
+            <img src="<?= $arItem['PICTURE_LQIP']['SRC']; ?>"
+                 data-src="<?= $arItem['PICTURE']['SRC']; ?>"
+                 class="services-item__img lazyload blur-up"
+                 alt="<?= $arItem['NAME']; ?>"
+                 width="<?= $arItem['PICTURE']['WIDTH']; ?>"
+                 height="<?= $arItem['PICTURE']['HEIGHT']; ?>">
+        </a>
+        <div class="services-item__wrapper">
+            <h<?=$param_small_card_tag_title; ?> class="services-item__title">
+                <a href="<?= $arItem['DETAIL_PAGE_URL']; ?>" class="services-item__title-link"><?= $arItem['NAME']; ?></a>
+            </h<?=$param_small_card_tag_title; ?>>
+            <?php if ($arItem['DISPLAY_PROPERTIES']['ATT_PREVIEW_TEXT']['~VALUE']): ?>
+            <div class="services-item__preview-text">
+                <?php
+                $APPLICATION->IncludeComponent(
+                        "sprint.editor:blocks",
+                        ".default",
+                        Array(
+                            "JSON" => $arItem['DISPLAY_PROPERTIES']['ATT_PREVIEW_TEXT']['~VALUE'],
+                        ),
+                        $component,
+                        Array(
+                            "HIDE_ICONS" => "Y"
+                        )
+                ); ?>
+            </div>
+            <a href="<?= $arItem['DETAIL_PAGE_URL']; ?>" class="services-item__link" rel="nofollow"><?= Loc::getMessage('SERVICES_LIST_LINK_MORE'); ?></a>
+            <?php endif; ?>
+        </div>
     </article>
     <?php endforeach; ?>
 </div>
